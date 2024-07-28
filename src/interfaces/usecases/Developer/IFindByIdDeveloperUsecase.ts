@@ -1,7 +1,7 @@
 
-            import { DeveloperEntity } from "../../../entities/DeveloperEntity";
+import { DeveloperEntity } from "../../../entities/DeveloperEntity"
 
-            export interface IFindByIdDeveloperUseCase {
+export interface IFindByIdDeveloperUseCase {
                 handle(id: string): Promise<DeveloperEntity | undefined>
             }
 

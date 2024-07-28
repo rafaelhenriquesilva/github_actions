@@ -4,16 +4,16 @@ import { createLanguageDeveloperMock } from "../../mock-entities/LanguageDevelop
 import { repositoryMock } from "../../mock-repositories/repository-mock"
 
 describe('FindByIdLanguageDeveloperUseCase', () => {
-    let usecase: FindByIdLanguageDeveloperUseCase
+  let usecase: FindByIdLanguageDeveloperUseCase
 
-    beforeEach(() => {
-        usecase = new FindByIdLanguageDeveloperUseCase(repositoryMock)
-    })
-  it('FindByIdLanguageDeveloperUseCase handle', async () => {
-        const mock = createLanguageDeveloperMock()
-        repositoryMock.findById.mockResolvedValue([mock])
-        await usecase.handle(mock.id)
-
-        expect(repositoryMock.findById).toHaveBeenCalledTimes(1)
+  beforeEach(() => {
+    usecase = new FindByIdLanguageDeveloperUseCase(repositoryMock)
   })
-    })
+  it('FindByIdLanguageDeveloperUseCase handle', async() => {
+    const mock = createLanguageDeveloperMock()
+    repositoryMock.findById.mockResolvedValue([mock])
+    await usecase.handle(mock.id)
+
+    expect(repositoryMock.findById).toHaveBeenCalledTimes(1)
+  })
+})

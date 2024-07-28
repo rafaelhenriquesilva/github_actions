@@ -1,7 +1,7 @@
 
-            import { LanguageDeveloperEntity } from "../../../entities/LanguageDeveloperEntity";
+import { LanguageDeveloperEntity } from "../../../entities/LanguageDeveloperEntity"
 
-            export interface IListAllLanguageDeveloperUseCase {
+export interface IListAllLanguageDeveloperUseCase {
                 handle(): Promise<LanguageDeveloperEntity[]>
             }
 

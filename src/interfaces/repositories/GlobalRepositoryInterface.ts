@@ -1,5 +1,5 @@
 
-            export interface GlobalRepositoryInterface<T> {
+export interface GlobalRepositoryInterface<T> {
                 listAll(): Promise<T[]>
                 deleteById(id: string | number): Promise<void>
                 findById(id: string | number): Promise<T[]>

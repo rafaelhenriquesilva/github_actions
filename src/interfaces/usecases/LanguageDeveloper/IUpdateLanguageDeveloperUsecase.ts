@@ -1,8 +1,8 @@
 
-          export interface IUpdateLanguageDeveloperUseCase {
+export interface IUpdateLanguageDeveloperUseCase {
               handle(input: inputUpdateLanguageDeveloper): Promise<void>
           }
- export interface inputUpdateLanguageDeveloper { 
+export interface inputUpdateLanguageDeveloper { 
 id: string 
 level: string 
 language: string 
